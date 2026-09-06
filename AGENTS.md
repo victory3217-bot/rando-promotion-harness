@@ -12,16 +12,19 @@
 `agents/promotion-agent.md`의 라우팅 기준을 보고 필요한 Skill 파일을 직접 열어 읽는 구조이며, 이
 구조는 두 플랫폼에서 동일하다. 아래 순서대로 **직접 파일을 열어 읽은 뒤** 작업한다.
 
+이 Harness는 고정된 상품 정보 파일을 사용하지 않는다. 이번 작업의 사실 원본은 **사용자가 현재
+대화에서 서술형으로 제공하는 상품·서비스 설명**이며, 이 원칙은 `core/PLAYBOOK.md`의 "Input 원칙"에
+정의되어 있다. 이 원칙은 Claude Code와 GPT/Codex 모두 동일하게 적용한다.
+
 ## 세션 시작 시 읽어야 할 파일
 
-1. `core/PLAYBOOK.md` — 정보 우선순위, 점진적 입력수집 원칙, 절대 규칙(Governance), 미확정 정보
-   처리, 채널 공통 사실검증 절차, 기본 작업 흐름. **모든 공통 규칙의 SSOT.** (이 내용을 이 파일에
+1. `core/PLAYBOOK.md` — Input 원칙, 정보 우선순위, 절대 규칙(Governance), `[확인필요]` 처리 원칙,
+   채널 공통 사실검증 절차, 기본 작업 흐름. **모든 공통 규칙의 SSOT.** (이 내용을 이 파일에
    다시 옮겨 적지 않는다 — 항상 원본을 직접 읽는다.)
 2. `agents/promotion-agent.md` — 콘텐츠 제작 요청을 실제로 수행하는 실행 절차와, 요청 유형별로
    어떤 `skills/*/SKILL.md`를 읽어야 하는지의 라우팅 기준.
 3. 사용자 요청의 채널/문서 유형에 맞는 `skills/*/SKILL.md` — 2번에서 확인한 라우팅 기준에 따라
    해당 파일을 직접 열어서 읽는다 (자동으로 로드되지 않는다).
-4. `inputs/business-info-card.md` — 이번 작업 대상 상품·서비스의 사실 SSOT.
-5. `knowledge/personal-profile.md` — 운영자(사용자)의 말투·형식 선호.
+4. `knowledge/personal-profile.md` — 운영자(사용자)의 말투·형식 선호.
 
 저장소 구조와 "무엇을 고치려면 어느 파일을 봐야 하는가"는 `ARCHITECTURE.md`를 참고한다.
