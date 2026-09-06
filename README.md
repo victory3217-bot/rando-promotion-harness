@@ -104,6 +104,10 @@ GitHub Issue에 축적한다. 각 로그는 BUG / QUALITY / IDEA로 구분해서
 
 고객 개인정보, 전화번호, 이메일, 계좌번호, 비공개 사업정보 등은 Public Issue에 기록하지 않는다.
 
+이 Harness를 사용해보고 문제가 발생했거나 개선 아이디어가 있다면 [GitHub Issues](https://github.com/victory3217-bot/rando-promotion-harness/issues)의
+[`Usage Log`](https://github.com/victory3217-bot/rando-promotion-harness/issues/new?template=usage-log.md) 템플릿을
+이용해 남겨주세요. 실제 사용 경험과 피드백은 다음 버전 개선에 활용됩니다.
+
 ---
 
 자세한 설계 원칙, 폴더별 책임, 변경관리 절차는 [`ARCHITECTURE.md`](./ARCHITECTURE.md)를 참고한다.
